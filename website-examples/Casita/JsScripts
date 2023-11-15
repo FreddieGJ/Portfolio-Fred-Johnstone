@@ -1,0 +1,6 @@
+var mainTitle = document.GetElementById("mainTitle");
+console.log("This is an element of type ", maiTitle.nodeType );
+console.log("the innerHTML is ", mainTitle.innerHTML );
+console.log("There are this many child objects ",mainTitle.childNodes);
+
+document.getElementById("mainTitle").innerhtml = "Welcome to Castia";

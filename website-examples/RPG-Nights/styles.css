@@ -1,0 +1,225 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+/*area for the banner and nav bar*/
+.banner{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                url('images/background-images/D&D-dice.jpg') center/cover no-repeat;
+    text-align: center;
+    color: #333;
+}
+
+a, a:hover, a:visited, a:active{
+    color:inherit;
+    text-decoration:none;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    display:flex;
+    justify-content:space-between;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.title{
+    margin-right:1em;
+}
+
+/*area for the first section of details*/
+.event-details {
+    padding: 20px;
+    text-align: center;
+}
+.event-location{
+    text-align:center;
+}
+/*area for the etiquette section*/
+.etiquette {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    
+}
+
+.etiquette h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.etiquette ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+    list-style-type:none;
+    text-align:center;
+}
+
+.etiquette ul li {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/*area for the "things to bring" section*/
+
+.items{
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align:center;
+   
+}
+.items ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+    list-style-type:none;
+    text-align:center;
+}
+
+/*game examples section*/
+
+.examples {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.game-title{
+    text-align:center;
+}
+.game{
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+
+.dnd {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), 
+                url('images/background-images/D&D-image1.jpg') center/cover no-repeat;
+}
+
+.cthulhu {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), 
+                url('images/background-images/COC-art.jpg') center/cover no-repeat;
+}
+
+.pathfinder {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), 
+                url('images/background-images/pathfinder-art.jpg') center/cover no-repeat;
+}
+
+.john {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), 
+                url('images/background-images/EIJ.jpg') center/cover no-repeat;
+}
+
+.content{
+    background-color:rgba(255, 255, 255, 0.6);
+    border-radius: 10%;
+}
+
+/*makes the sections of the game area a bit more interactive*/
+
+.game img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height:auto;
+}
+
+.game:hover {
+    transform: translateY(-5px);
+}
+
+.game {
+    text-align: center; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.game img,
+.etiquette img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+    max-width:300px;
+}
+
+.game:hover img {
+    transform: translateY(20px);
+}
+
+/*very small section for the map at the bottom of the page*/
+
+.map{
+    display:block;
+    margin:0 auto;
+}

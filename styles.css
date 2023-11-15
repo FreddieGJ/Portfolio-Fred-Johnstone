@@ -1,0 +1,135 @@
+body, html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  background-image: url('images/starting-image.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.section {
+  margin-top:-10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.section img {
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  flex: 0 0 300px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.1);
+}
+
+.site-link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.site-link:hover {
+  color: rgb(165, 163, 163);
+}
+
+.contact {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact a {
+  margin: 0 20px;
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Media Queries */
+
+/* Styles for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+  .section {
+    padding: 30px;
+  }
+
+  .portfolio-item {
+    flex: 0 0 100%;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+/* Styles for screens between 768px and 991px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    padding: 40px;
+    margin-top: -25px;
+  }
+
+  .portfolio-item {
+    flex: 0 0 48%;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+/* Styles for screens larger than 992px (e.g., desktops) */
+@media (min-width: 992px) {
+  .portfolio-item {
+    flex: 0 0 30%;
+  }
+}

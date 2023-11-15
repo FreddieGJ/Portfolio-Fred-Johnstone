@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<!-- the title of the webpage (in the tab) -->
+<title id = "mainTitle">Casita Sedona</title>
+<meta charset="utf-8">
+<!-- the link to the CSS and the stylesheet 
+where all the customization/pretty stuff happens -->
+<link href="casita.css" rel="stylesheet"> 
+<!-- This commented out script tag, is the locally downloaded jQuery file. -->
+<!--<script src ="jquery-3.6.1.js"></script> -->
+<!-- This script tag is the link that allows us to use jQuery. -->
+<script src = "https://code.jquery.com/jquery-3.6.1.js"></script>
+	<script>
+		$(document).ready(function (){
+			$("button").click(function() {
+				$("#nav").toggle();
+			});
+		});
+		$("p").css("background-color","yellow");
+	</script>
+</head>
+<section>
+<body>
+enter name <input type = "text" id = "text1" value "">
+<div id="wrapper">
+  <header>
+	  <!-- this link allows us to change the writing in the JavaScript file -->
+      <h1 id = "bigTitle">Casita</h1>
+  </header>
+  <nav>
+    <button id = "button">Click to toggle hiding the nav</button>
+  <ul id = "nav"> <!-- these are all the links to the other pages and information on the website -->
+    <li><a href="index.html" id = "mainPage">Main Page</a></li>
+	<li><a href="rooms/canyon.html" id = "canyonRoom">Canyon Room</a></li>
+	<li><a href="rooms/javelina.html" id = "javalinRoom">Javelina Room</a></li>
+	<li><a href="rooms/juniper.html" id = "juniperRoom">Juniper Room</a></li>
+	<li><a href="events/weekend.html" id = "weekendEvents">Weekend Events</a></li>
+	<li><a href="events/festival.html">Festivals</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  </nav>
+  <main>
+  <h2>What you need to know</h2>
+  <img src="images/scenery.jpg" id = "coverImg" alt="Sedona Scenery" width="450" height="200">
+  <h3>About Casita</h3>
+  <p><h3>What to look forward to</h3>
+  <p id = "fluffText">Beautiful views, relaxing atmosphere, rustic asthetic, and killer
+  wifi means that you'll be able to lounge on your porch in the warm air,
+  sipping a cool drink all whilst posting pictures to your instagram to make your friends jealous.
+		<h3>Reasons to come</h3>
+		<ul id = "ReasonsToCome">
+			<li id = "views">Breathtaking views</li>
+			<li id = "air">Clean air</li>
+			<li id = "hikes">Fantasitic hikes</li>
+			<li id = "wifi">Did we mention the WiFi?</li>
+		</ul>
+  <h5>customer reviews<h5>
+  <div class = "customerbox" id = "customer1">
+		<h2>An amazing time!</h2>
+		<p>
+			We went with some friends for a getaway and we had so much fun!
+		</p>
+		<h5>John Smith</h5>
+	</div>
+	<div class = "customerbox" id = "customer2">
+	<h2>Simply beautiful.</h2>
+		<p>
+			Took my husband and kids and they've been begging to back ever since!
+		</p>
+		<h5>Molly Kesh</h5>
+  </div>
+  </main>
+  <footer>
+  Copyright &copy; 2018 Your Name Here
+  </footer>
+</div>
+<!-- this is the link to the JavaScript where we are able to access
+the DOM and get/change information that we want -->
+<script src = "JsScripts.js"></script>
+</body>
+</section>
+</html>
